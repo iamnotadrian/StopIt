@@ -150,7 +150,7 @@ function createUnlockTest() {
   taskList.appendChild(row);
 
   const progress = document.createElement("div");
-  progress.textContent = `0 / ${NUMBER_OF_TASKS} richtig`;
+  progress.textContent = `0 / ${NUMBER_OF_TASKS} correct`;
   progress.style.marginTop = "10px";
   progress.style.fontSize = "12px";
   progress.style.color = "#7a8a93";
