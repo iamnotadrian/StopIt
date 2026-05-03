@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wait A Second</title>
+
+    <style>
+      body {
+        width: 300px;
+        padding: 16px;
+        font-family: Arial, sans-serif;
+        background: #f7f5ef;
+        color: #173047;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+
+      p {
+        margin-bottom: 14px;
+        color: #52616b;
+        font-size: 13px;
+      }
+
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #cfd8d3;
+        border-radius: 10px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background: #8bb8a8;
+        color: #fef9f5;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      ul {
+        margin: 14px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 8px 0;
+        border-bottom: 1px solid #e0ded8;
+        font-size: 13px;
+        word-break: break-all;
+      }
+
+      .remove {
+        width: auto;
+        padding: 6px 8px;
+        background: #e7e2d8;
+        color: #173047;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <h1>Wait A Second</h1>
+    <p>Füge Webseiten hinzu, bei denen du kurz innehalten möchtest.</p>-->
+
+    <input
+      id="urlInput"
+      placeholder="e.g. instagram, https://www.instagram.com"
+    />
+
+    <button id="addButton">Webseite hinzufügen</button>
+    <ul id="siteList"></ul>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

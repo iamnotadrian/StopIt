@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Stop It",
+  "version": "1.0",
+  "description": "Zeigt eine ruhige Erinnerung auf ausgewählten Webseiten.",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Stop It",
+    "default_popup": "/popup/popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
